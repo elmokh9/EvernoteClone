@@ -1,6 +1,6 @@
 .textBody{
     text-align: center;
-    padding: 0 150px;
+    padding: 40px 0 0 0;
     margin: 0 auto;
     max-width: 1220px;
 }
@@ -14,12 +14,16 @@
 {.textBody{
     padding: 0 40px;
 }}
+
 @media only screen and (max-width: 600px)
 {.textBody {
     padding: 0 20px;
 }
-} */
-
+}*/ 
+.textTitle{
+    width: 80%;    
+    margin: 0 auto;
+}
 .textBody h1{
     padding: 0 10px 10px ;
     font-family: "Soleil_Medium",Helvetica,Arial,sans-serif;
@@ -29,16 +33,16 @@
 }
 
 @media only screen and (max-width: 600px){
-    h1{
-        /* TODO fix this without using !imp */
-        font-size: 36px !important;
-        line-height: 40px !important;
+    .textBody h1{
+        font-size: 36px ;
+        line-height: 40px;
     }
 }
+
 @media only screen and (max-width: 960px){
-    h1{
-        font-size: 50px !important;
-        line-height: 150% !important;
+    .texBody h1{
+        font-size: 50px ;
+        line-height: 150% ;
     }
 }
 
