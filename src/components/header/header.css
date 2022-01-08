@@ -1,0 +1,48 @@
+.header{
+    width: 100%;
+    display: flex;
+    max-height: 8rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    /* TODO this */
+    padding: 10px ;
+    position: relative;
+}
+.logo{
+    width: 20rem;
+    max-width: 177px;
+}
+.header button{
+    /* border: transparent; */
+    background-color: white;
+    display: block;
+    
+}
+@media only screen and (min-width:320px){
+    .header button{
+        display: none;
+    }
+}
+
+.header button:hover{
+    cursor: pointer;
+}
+.icon{
+    padding-right: 0.2rem;
+    width: 2rem;
+    height: 2.2rem;
+}
+@media only screen and (max-width: 320px){
+    .logo{
+        width: 60%;
+    }
+    .icon{
+        width: 10%;
+        height: 10vw;
+    }
+}
+/* display all
+@media only screen and (max-width: 320px){
+
+} */
