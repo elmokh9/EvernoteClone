@@ -22,3 +22,8 @@ code {
     monospace;
 }
 
+p, ul, ol, table {
+    font-family: "Soleil",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 21px;
+}

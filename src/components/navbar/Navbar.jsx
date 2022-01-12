@@ -3,9 +3,9 @@ import "./navbar.css";
 
 const Navbar = (props)=>{
     console.log(props.data);
-    return <div className="navbarContents">
-        <a href={props.link}>{props.data}</a>
-    </div>
+    return (props.id < 3 ? <div className="navbarContents">
+    <a href={props.link}>{props.data}</a>
+    </div> : null);
 }
 
 export default Navbar;

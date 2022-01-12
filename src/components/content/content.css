@@ -1,0 +1,71 @@
+/* Outer container is flex when <768px, otherwise flex so both come. */
+.hero-row{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+.hero-img{
+    margin: 0 auto;
+    display: flex;
+    width: 84%;
+    align-items: center;
+}
+.hero-img img{
+    max-width: 100%;
+}
+.carousel-container{
+    width: 16%;
+    min-width: 240px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    /* display: flex; */
+}
+@keyframes carous {
+    /* TODO make last transition shorter and all others too, stay longer */
+    0%{transform: translateX(0);}
+    12.5%{transform: translateX(-100vw);}
+    25%{transform: translateX(-100vw);}
+    37.5%{transform: translateX(-200vw);}
+    50%{transform: translateX(-200vw);}
+    62.5%{transform: translateX(-300vw);}
+    75%{transform: translateX(-300vw);}
+    87.5%{transform: translateX(0);}
+    100%{transform: translateX(0);}
+}
+@media only screen and (max-width:768px){
+    .carousel-container{
+        width:400vw;
+        flex-direction: row;
+        animation-name: carous;
+        animation-duration: 10s;
+        animation-timing-function:linear;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+    }
+    .hero-row{
+        display: block;
+    }
+    .hero-img{
+        padding: 0 20px;
+        width: 100%;
+    }
+}
+.carousel-items{
+    margin: 0 auto;
+    text-align: center;
+}
+.carousel-heading{
+    /* TODO */
+    font-family: "Soleil_Bold",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+.carousel-content{
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 150%;
+}
