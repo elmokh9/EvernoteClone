@@ -1,21 +1,24 @@
-/* Outer container is flex when <768px, otherwise flex so both come. */
+
 .hero-row{
     width: 100%;
     display: flex;
     margin: 0;
     padding: 0;
-    overflow: hidden
+    overflow: hidden;
+    z-index: 998;
 }
 .hero-img{
     margin: 0 auto;
     display: flex;
-    width: 84%;
+    width: 82%;
     align-items: center;
 }
 .hero-img img{
     max-width: 100%;
 }
 .carousel-container{
+    position: relative;
+
     width: 16%;
     min-width: 240px;
     display: flex;

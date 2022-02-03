@@ -8,19 +8,16 @@ import Icon from "./closeIcon";
 
 const Header = ()=>{
     const [sideNav, setsideNav] = useState(false);
+    // TODO useCallback
     function clicked(){
         setsideNav((prevValue)=>{
             return !prevValue;
         });
         console.log(sideNav);
     }
+    // TODO use memo
     const list = [
         {id:0, name: "Why Evernote", link: "#"}, {id:1, name: "Features", link: "#"},{id:2, name: "Plans", link: "#"},{id:3, name: "Help", link: "#"},{name:"Log In", link: "#"}]
-
-    // const stylee= {
-    //     transform: : sideNav ? "translateX(600px)" : "none" ,
-    //     visibility: sideNav ? "visible" : "hidden"
-    // }
     return(
     <div className="global-header">
         <img className="logo" src={logo}></img>
